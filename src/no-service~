@@ -1,0 +1,159 @@
+It gets stuck at the data connection check, saying,
+    "Switching data connection on..."
+
+Traceback (most recent call last):             
+  File "src/__main__.py", line 734, in <module>
+  File "src/__main__.py", line 604, in run_checks
+  File "src/__main__.py", line 517, in check_connection_status
+
+
+view-source:http://192.168.100.1/api/wlan/station-information
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<PowerStatus></PowerStatus> 
+<ConnectStatus></ConnectStatus>
+<SignalStrength>0</SignalStrength>
+<NetworkName></NetworkName>
+<CurrentSecMode></CurrentSecMode>
+<RxFlux>0</RxFlux>
+<TxFlux>0</TxFlux>
+<TotalRxFlux>2656609329</TotalRxFlux>
+<TotalTxFlux>424994144</TotalTxFlux>
+<CurrentTime>0</CurrentTime>
+<TotalTime>338303</TotalTime>
+<IpAddress></IpAddress>
+<Ipv6Address></Ipv6Address>
+<PrimaryDns></PrimaryDns>
+<PrimaryIpv6Dns></PrimaryIpv6Dns>
+<SecondaryDns></SecondaryDns>
+<SecondaryIpv6Dns></SecondaryIpv6Dns>
+<maxwifisignal>4</maxwifisignal>
+</response>
+
+
+view-source:http://192.168.100.1/api/net/net-mode-list
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<AccessList>
+<Access>00</Access>
+<Access>01</Access>
+<Access>02</Access>
+</AccessList>
+<BandList>
+<Band>
+<Name>GSM900/GSM1800/WCDMA900/WCDMA2100</Name>
+<Value>2000000400380</Value>
+</Band>
+<Band>
+<Name>GSM850/GSM1900</Name>
+<Value>280000</Value>
+</Band>
+<Band>
+<Name>All bands</Name>
+<Value>3fffffff</Value>
+</Band>
+</BandList>
+<LTEBandList>
+</LTEBandList>
+</response>
+
+
+view-source:http://192.168.100.1/api/net/net-mode
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<NetworkMode>00</NetworkMode>
+<NetworkBand>3FFFFFFF</NetworkBand>
+<LTEBand></LTEBand>
+</response>
+
+
+view-source:http://192.168.100.1/api/net/current-plmn
+<?xml version="1.0" encoding="UTF-8"?>
+<error>
+<code>-1</code>
+<message></message>
+</error>
+
+
+view-source:http://192.168.100.1/api/monitoring/converged-status
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<SimState>257</SimState>
+<SimLockEnable>0</SimLockEnable>
+<CurrentLanguage>en-us</CurrentLanguage>
+</response>
+
+
+view-source:http://192.168.100.1/api/monitoring/status (No Service)
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<ConnectionStatus>902</ConnectionStatus>
+<WifiConnectionStatus>902</WifiConnectionStatus>
+<SignalStrength>0</SignalStrength>
+<SignalIcon>0</SignalIcon>
+<CurrentNetworkType>3</CurrentNetworkType>
+<CurrentServiceDomain>3</CurrentServiceDomain>
+<RoamingStatus>0</RoamingStatus>
+<BatteryStatus>0</BatteryStatus>
+<BatteryLevel>4</BatteryLevel>
+<BatteryPercent>100</BatteryPercent>
+<simlockStatus>0</simlockStatus>
+<WanIPAddress></WanIPAddress>
+<WanIPv6Address></WanIPv6Address>
+<PrimaryDns></PrimaryDns>
+<SecondaryDns></SecondaryDns>
+<PrimaryIPv6Dns></PrimaryIPv6Dns>
+<SecondaryIPv6Dns></SecondaryIPv6Dns>
+<CurrentWifiUser>2</CurrentWifiUser>
+<TotalWifiUser>10</TotalWifiUser>
+<currenttotalwifiuser>10</currenttotalwifiuser>
+<ServiceStatus>1</ServiceStatus>
+<SimStatus>4</SimStatus>
+<WifiStatus>1</WifiStatus>
+<CurrentNetworkTypeEx>3</CurrentNetworkTypeEx>
+<WanPolicy>0</WanPolicy>
+<maxsignal>5</maxsignal>
+<wifiindooronly>0</wifiindooronly>
+<wififrequence>0</wififrequence>
+<msisdn></msisdn>
+<classify></classify>
+<flymode>0</flymode>
+</response>
+
+
+view-source:http://192.168.100.1/api/monitoring/status (Connected)
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<ConnectionStatus>901</ConnectionStatus>
+<WifiConnectionStatus>902</WifiConnectionStatus>
+<SignalStrength></SignalStrength>                           <--- Good candidate
+<SignalIcon>5</SignalIcon>                                  <--- Good candidate
+<CurrentNetworkType>45</CurrentNetworkType>
+<CurrentServiceDomain>3</CurrentServiceDomain>
+<RoamingStatus>0</RoamingStatus>
+<BatteryStatus>0</BatteryStatus>
+<BatteryLevel>4</BatteryLevel>
+<BatteryPercent>100</BatteryPercent>
+<simlockStatus>0</simlockStatus>
+<WanIPAddress>10.10.58.193</WanIPAddress>                   <--- Good candidate
+<WanIPv6Address></WanIPv6Address>
+<PrimaryDns>81.199.3.7</PrimaryDns>                         <--- Good candidate
+<SecondaryDns>81.199.3.18</SecondaryDns>                    <--- Good candidate
+<PrimaryIPv6Dns></PrimaryIPv6Dns>
+<SecondaryIPv6Dns></SecondaryIPv6Dns>
+<CurrentWifiUser>3</CurrentWifiUser>
+<TotalWifiUser>10</TotalWifiUser>
+<currenttotalwifiuser>10</currenttotalwifiuser>
+<ServiceStatus>2</ServiceStatus>                            <--- Good candidate
+<SimStatus>1</SimStatus>                                    <--- Good candidate
+<WifiStatus>1</WifiStatus>
+<CurrentNetworkTypeEx>45</CurrentNetworkTypeEx>
+<WanPolicy>0</WanPolicy>
+<maxsignal>5</maxsignal>
+<wifiindooronly>0</wifiindooronly>
+<wififrequence>0</wififrequence>
+<msisdn></msisdn>
+<classify></classify>
+<flymode>0</flymode>
+</response>
+

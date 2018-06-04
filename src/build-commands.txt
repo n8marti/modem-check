@@ -1,0 +1,22 @@
+WINDOWS EXE
+
+>s:
+>cd \modem-check\src
+
+# === Standard version ===
+>pyinstaller --clean -F -n "ModemCheck v0.6.exe" -i favicon.ico --uac-admin --win-private-assemblies __main__.py
+
+# === Debug version ======
+>pyinstaller --clean -F -n "ModemCheck(dbg) v0.6.exe" -i favicon.ico --uac-admin -d --win-private-assemblies __main__.py
+
+
+
+LINUX EXECUTABLE
+
+(env) $ cd scripts/modem-check
+
+# === Standard version ===
+(env) $ pyinstaller --clean -F -n "ModemCheck v0.6" __main__.py
+
+# === Debug version ======
+(env) $ pyinstaller --clean -F -n "ModemCheck(dbg) v0.6" -d __main__.py

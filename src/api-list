@@ -1,0 +1,107 @@
+Error codes:
+=================================
+https://gowalker.org/github.com/knq/hilink
+"-1":     "system not available",
+"100002": "not supported by firmware or incorrect API path",
+"100003": "no power",
+"100004": "system busy",
+"100005": "unknown error",
+"100006": "invalid parameter",
+"100009": "write error",
+"103002": "unknown error",
+"103015": "unknown error",
+"108001": "invalid username",
+"108002": "invalid password",
+"108003": "user already logged in",
+"108006": "invalid username or password",
+"108007": "invalid username, password, or session timeout",
+"110024": "battery charge less than 50%",
+"111019": "no network response",
+"111020": "network timeout",
+"111022": "network not supported",
+"113018": "system busy",
+"114001": "file already exists",
+"114002": "file already exists",
+"114003": "SD card currently in use",
+"114004": "path does not exist",
+"114005": "path too long",
+"114006": "no permission for specified file or directory",
+"115001": "unknown error",
+"117001": "incorrect WiFi password",
+"117004": "incorrect WISPr password",
+"120001": "voice busy",
+"125001": "invalid token",
+
+
+getAjax:
+=================================
+api/cradle/basic-info                   100002
+api/cradle/feature-switch               100002
+api/cradle/status-info                  100002
+api/device/autorun-version
+api/device/basic_information
+api/device/device-feature-switch
+api/device/information
+api/device/usb-tethering-switch
+api/dhcp/settings
+api/dialup/connection
+api/dialup/dialup-feature-switch
+api/dialup/mobile-dataswitch
+api/dialup/profiles
+api/global/module-switch
+api/monitoring/check-notifications
+api/monitoring/converged-status
+api/monitoring/status
+api/monitoring/traffic-statistics
+api/net/current-plmn
+api/net/net-mode
+api/net/net-mode-list
+api/online-update/upgrade-messagebox
+api/ota/status
+api/pin/simlock
+api/pin/status
+api/prsite/getrandurl
+api/redirection/homepage
+api/security/bridgemode
+api/sms/get-cbsnewslist
+api/user/hilink_login
+api/user/remind
+api/user/state-login
+api/webserver/publickey
+api/webserver/token
+api/wlan/basic-settings
+api/wlan/handover-setting
+api/wlan/multi-basic-settings
+api/wlan/multi-security-settings
+api/wlan/multi-security-settings-ex
+api/wlan/multi-switch-settings
+api/wlan/security-settings
+api/wlan/station-information
+api/wlan/wifi-feature-switch
+
+
+saveAjax:
+=================================
+api/cradle/basic-info
+api/device/basic_information
+api/device/control
+api/device/mode <mode>0</mode> 0: default, 1: debug
+api/device/restore-default
+api/dialup/dial
+api/dialup/mobile-dataswitch
+api/dialup/profiles
+api/host/info
+api/language/current-language
+api/online-update/upgrade-messagebox
+api/prsite/getrandurl
+api/user/login
+api/user/logout
+api/user/remind
+api/user/session
+api/ussd/send <content></content><codeType></codeType><timeout></timeout>
+api/wlan/basic-settings
+api/wlan/handover-setting
+api/wlan/multi-basic-settings
+api/wlan/multi-switch-settings
+api/wlan/security-settings
+
