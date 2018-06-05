@@ -1,4 +1,4 @@
-#!/home/nate/envs/py3-inet/bin/python
+#!/home/nate/.venv/modem/bin/python
 
 
 v = "0.7" # Version number
