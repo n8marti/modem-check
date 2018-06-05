@@ -1,3 +1,9 @@
+# Directories #
+###############
+src/__pycache__/
+src/build/
+src/dist/
+
 # Compiled source #
 ###################
 *.exe
