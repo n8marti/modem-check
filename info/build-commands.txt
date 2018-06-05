@@ -1,5 +1,5 @@
 WINDOWS EXE
-
+===========
 >s:
 >cd \modem-check\src
 
@@ -12,7 +12,7 @@ WINDOWS EXE
 
 
 LINUX EXECUTABLE
-
+================
 (env) $ cd scripts/modem-check
 
 # === Standard version ===
