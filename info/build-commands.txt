@@ -13,7 +13,7 @@ WINDOWS EXE
 
 LINUX EXECUTABLE
 ================
-(env) $ cd scripts/modem-check
+(env) $ cd scripts/modem-check/src
 
 # === Standard version ===
 (env) $ pyinstaller --clean -F -n "ModemCheck v0.6" __main__.py
